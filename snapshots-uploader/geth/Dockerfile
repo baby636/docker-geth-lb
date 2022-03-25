@@ -1,5 +1,5 @@
 #Get base image
-FROM golang:1.10-alpine
+FROM golang:1.16.12-alpine
 
 # Set environment variables.
 ENV HOME /root
