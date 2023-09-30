@@ -1,5 +1,5 @@
 #Get base image
-FROM alpine:3.9 AS builder
+FROM alpine:3.18.4 AS builder
 
 # Set environment variables.
 ENV HOME /root
@@ -23,7 +23,7 @@ RUN cd parity && \
 	git checkout stable  && \
 	cargo build --release --features final
 
-FROM alpine:3.9
+FROM alpine:3.18.4
 
 # Set environment variables. 
 ENV HOME /root
