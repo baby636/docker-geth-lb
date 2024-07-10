@@ -1,5 +1,5 @@
 #Get base image
-FROM ubuntu:16.04
+FROM ubuntu:xenial-20201014
 
 # Set environment variables.
 ENV HOME /root
